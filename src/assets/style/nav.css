@@ -1,0 +1,53 @@
+/* =========================
+   NAVBAR STYLING
+========================= */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #a3b18a, #588157);
+  box-shadow: 0 4px 12px rgba(88, 129, 87, 0.25);
+  border-radius: 12px;
+  margin: 1rem auto;
+  max-width: 900px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f5f5dc;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(245, 245, 220, 0.2);
+  color: #344e41;
+  transform: translateY(-2px);
+}
+
+nav a.active {
+  background-color: #f5f5dc;
+  color: #344e41;
+}
+
+.logout-btn {
+  background-color: #6b8e23;
+  color: #f5f5dc !important;
+}
+
+.logout-btn:hover {
+  background-color: #588157;
+  color: #f5f5dc !important;
+}
+
+/* =========================
+  LOGIN FORM STYLING
+========================= */
+.form-container.dark {
+  min-height: 100vh;
+}

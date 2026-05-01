@@ -1,0 +1,109 @@
+/* =========================
+   RESTAURANT GRID LAYOUT
+========================= */
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Individual card wrapper */
+.restaurant-card-wrapper {
+  background: #f5f5dc;
+  border: 1px solid #a3b18a;
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 6px 18px rgba(88, 129, 87, 0.12);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.restaurant-card-wrapper:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(88, 129, 87, 0.2);
+  border-color: #588157;
+}
+
+/* Inner text styling */
+.restaurant-card-wrapper h1,
+.restaurant-card-wrapper h2,
+.restaurant-card-wrapper h3,
+.restaurant-card-wrapper p {
+  color: #344e41;
+  margin-bottom: 0.5rem;
+}
+
+/* Optional button styling inside card */
+.restaurant-card-wrapper button {
+  background: linear-gradient(90deg, #588157, #6b8e23);
+  color: #f5f5dc;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.restaurant-card-wrapper button:hover {
+  background: linear-gradient(90deg, #6b8e23, #588157);
+  transform: translateY(-2px);
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  .restaurant-grid {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .restaurant-card-wrapper {
+    padding: 1.2rem;
+  }
+}
+
+.restaurant-card {
+  background: #f5f5dc;
+
+  border-radius: 14px;
+  padding: 1.2rem;
+
+}
+
+.restaurant-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #344e41;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.restaurant-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #344e41;
+}
+
+.detail-item svg {
+  color: #588157;
+}
+
+.detail-text {
+  font-size: 0.95rem;
+}
+
+.restaurant-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}

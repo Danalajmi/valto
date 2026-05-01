@@ -1,0 +1,134 @@
+.form-container.dark {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.form-container.dark form {
+  background: rgba(163, 177, 138, 0.95);
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(88, 129, 87, 0.2);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container.dark label {
+  color: #344e41;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.form-container.dark input {
+  padding: 0.85rem 1rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #588157;
+  border-radius: 10px;
+  background-color: #f5f5dc;
+  color: #344e41;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.form-container.dark input::placeholder {
+  color: #7f8f6b;
+}
+
+.form-container.dark input:focus {
+  border-color: #6b8e23;
+  box-shadow: 0 0 0 3px rgba(107, 142, 35, 0.25);
+}
+
+.form-container.dark button {
+  padding: 0.9rem;
+  background: linear-gradient(90deg, #588157, #6b8e23);
+  color: #f5f5dc;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-container.dark button:hover {
+  background: linear-gradient(90deg, #6b8e23, #588157);
+  transform: translateY(-2px);
+}
+
+.form-container.dark button:active {
+  transform: scale(0.98);
+}
+
+/* =========================
+   ROLE TOGGLE STYLING
+========================= */
+.role-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background: rgba(245, 245, 220, 0.7);
+  padding: 0.5rem;
+  border-radius: 14px;
+  box-shadow: inset 0 2px 6px rgba(88, 129, 87, 0.15);
+}
+
+.role-btn {
+  flex: 1;
+  padding: 0.9rem 1.5rem;
+  border: 2px solid #588157;
+  background-color: #f5f5dc;
+  color: #344e41;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.role-btn:hover {
+  background-color: #dad7cd;
+  color: #2d3e2f;
+  transform: translateY(-2px);
+}
+
+/* Active selected role */
+
+
+.role-btn.active {
+  background: #344e41 !important;
+  color: #f5f5dc !important;
+  border-color: #344e41 !important;
+  box-shadow: 0 4px 12px rgba(52, 78, 65, 0.35) !important;
+  transform: scale(1.03);
+}
+
+
+/* Click effect */
+.role-btn:active {
+  transform: scale(0.98);
+
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .role-toggle {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .role-btn {
+    width: 100%;
+  }
+}
+
